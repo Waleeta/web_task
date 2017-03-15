@@ -9,33 +9,39 @@ import { Grid, Row, Col } from 'react-bootstrap'
 
 // view/presentational component
 class Car extends Component {
+
+		// set initial state to {currentImage: props.car.carImages[0]}
+		// 
+
 		render() {
 
 				const car = this.props.car;
 				return (
-						<Grid> 
+						<Grid className='full-car'> 
 						
-							<Row>
+							<Row className='nav-bar'>
 								Nav Bar
 							</Row>
 							<Row>
-									<Col md={6} >
-											<MainImage car={car} />
+									<Col md={7} className='main-car-image' >
+											<MainImage  car={car} />
 									</Col>
-									<Col md={4} >
+									<Col md={5} className='side-bar-info'>
 											<SideBar car={car} />
 									</Col>
 							</Row>
-							<Row>
-								<CarImages car={car}/>
+							<Row className="car-images">
+								<Col md={10}>
+									<CarImages car={car}/>
+								</Col>
 							</Row>
 								
 							<Row> 
-									<Col md={4}>
-											<CarInfoBox car={car} header={"Performance"}/>
+									<Col md={5} className='car-info-div'> 
+											<CarInfoBox car={car} header={"EXTERIOR"}/>
 									</Col>
-									<Col md={4} > 
-											<CarInfoBox car={car} header={"Exterior"}/>
+									<Col md={5} className='car-info-div'>
+											<CarInfoBox car={car} header={"PERFORMANCE"}/>
 									</Col>
 							</Row>
 

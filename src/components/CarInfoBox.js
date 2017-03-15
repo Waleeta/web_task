@@ -7,36 +7,36 @@ class CarInfoBox extends Component {
 		const mileage = this.props.car.mileage
 
 		return (
-			<div>
-			<Row> 
-				{this.props.header}
-			</Row> 
-			<Row > 
-				<Col md={6}> 
-					cylinders	
-				</Col> 
-				<Col md={6}>
-					{this.props.car.cylinders}
-				</Col>
-				<Col md={6}> 
-					city MPG	
-				</Col> 
-				<Col md={6}>
-					{this.props.car.cityMpg}
-				</Col>
-				<Col md={6}> 
-					highway MPG	
-				</Col> 
-				<Col md={6}>
-					{this.props.car.highwayMpg}
-				</Col>
-				<Col md={6}> 
-					engine
-				</Col> 
-				<Col md={6}>
-					{this.props.car.engine}
-				</Col>
-			</Row>
+			<div >
+				<Row > 
+					<h4 className='car-info-heading'>{this.props.header}</h4>
+				</Row> 
+				<Row  > 
+					<Col md={5} className='car-info-details'> 
+						<h6>cylinders</h6>
+					</Col> 
+					<Col md={5} >
+						{this.props.car.cylinders}
+					</Col>
+					<Col md={5} className='car-info-details'> 
+						city MPG	
+					</Col> 
+					<Col md={5}>
+						{this.props.car.cityMpg}
+					</Col>
+					<Col md={5} className='car-info-details'> 
+						highway MPG	
+					</Col> 
+					<Col md={5} >
+						{this.props.car.highwayMpg}
+					</Col>
+					<Col md={5} className='car-info-details'> 
+						engine
+					</Col> 
+					<Col md={5}>
+						{this.props.car.engine}
+					</Col>
+				</Row>
 
 			</div>
 			)

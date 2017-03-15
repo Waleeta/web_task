@@ -17151,15 +17151,20 @@ var Car = function (_Component) {
 
 		_createClass(Car, [{
 				key: 'render',
+
+
+				// set initial state to {currentImage: props.car.carImages[0]}
+				// 
+
 				value: function render() {
 
 						var car = this.props.car;
 						return _react2.default.createElement(
 								_reactBootstrap.Grid,
-								null,
+								{ className: 'full-car' },
 								_react2.default.createElement(
 										_reactBootstrap.Row,
-										null,
+										{ className: 'nav-bar' },
 										'Nav Bar'
 								),
 								_react2.default.createElement(
@@ -17167,32 +17172,36 @@ var Car = function (_Component) {
 										null,
 										_react2.default.createElement(
 												_reactBootstrap.Col,
-												{ md: 6 },
+												{ md: 7, className: 'main-car-image' },
 												_react2.default.createElement(_MainImage2.default, { car: car })
 										),
 										_react2.default.createElement(
 												_reactBootstrap.Col,
-												{ md: 4 },
+												{ md: 5, className: 'side-bar-info' },
 												_react2.default.createElement(_SideBar2.default, { car: car })
 										)
 								),
 								_react2.default.createElement(
 										_reactBootstrap.Row,
-										null,
-										_react2.default.createElement(_CarImages2.default, { car: car })
+										{ className: 'car-images' },
+										_react2.default.createElement(
+												_reactBootstrap.Col,
+												{ md: 10 },
+												_react2.default.createElement(_CarImages2.default, { car: car })
+										)
 								),
 								_react2.default.createElement(
 										_reactBootstrap.Row,
 										null,
 										_react2.default.createElement(
 												_reactBootstrap.Col,
-												{ md: 4 },
-												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Performance" })
+												{ md: 5, className: 'car-info-div' },
+												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "EXTERIOR" })
 										),
 										_react2.default.createElement(
 												_reactBootstrap.Col,
-												{ md: 4 },
-												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Exterior" })
+												{ md: 5, className: 'car-info-div' },
+												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "PERFORMANCE" })
 										)
 								)
 						);
@@ -17212,7 +17221,7 @@ exports.default = Car;
 
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+							value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17232,51 +17241,54 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CarImages = function (_Component) {
-		_inherits(CarImages, _Component);
+							_inherits(CarImages, _Component);
 
-		function CarImages() {
-				_classCallCheck(this, CarImages);
+							function CarImages() {
+														_classCallCheck(this, CarImages);
 
-				return _possibleConstructorReturn(this, (CarImages.__proto__ || Object.getPrototypeOf(CarImages)).apply(this, arguments));
-		}
+														return _possibleConstructorReturn(this, (CarImages.__proto__ || Object.getPrototypeOf(CarImages)).apply(this, arguments));
+							}
 
-		_createClass(CarImages, [{
-				key: 'render',
-				value: function render() {
-						return _react2.default.createElement(
-								'div',
-								{ className: 'hidden-xs' },
-								_react2.default.createElement(
-										_reactBootstrap.Row,
-										null,
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' }),
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg' }),
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg' }),
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg' }),
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg' }),
-										_react2.default.createElement('img', {
-												style: { width: 100, height: 100 },
-												src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg' })
-								)
-						);
-				}
-		}]);
+							_createClass(CarImages, [{
+														key: 'render',
+														value: function render() {
+																					return _react2.default.createElement(
+																												'div',
+																												{ className: 'hidden-xs' },
+																												_react2.default.createElement('img', {
+																																			style: { width: 100, height: 100 },
+																																			className: 'image-gallery',
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' }),
+																												_react2.default.createElement('img', {
+																																			className: 'image-gallery',
+																																			style: { width: 100, height: 100 },
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg' }),
+																												_react2.default.createElement('img', {
+																																			className: 'image-gallery',
+																																			style: { width: 100, height: 100 },
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg' }),
+																												_react2.default.createElement('img', {
+																																			className: 'image-gallery',
+																																			style: { width: 100, height: 100 },
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg' }),
+																												_react2.default.createElement('img', {
+																																			className: 'image-gallery',
+																																			style: { width: 100, height: 100 },
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg' }),
+																												_react2.default.createElement('img', {
+																																			className: 'image-gallery',
+																																			style: { width: 100, height: 100 },
+																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg' })
+																					);
+														}
+							}]);
 
-		return CarImages;
+							return CarImages;
 }(_react.Component);
 
 CarImages.propTypes = {
-		car: _react2.default.PropTypes.object.isRequired
+							car: _react2.default.PropTypes.object.isRequired,
+							onClick: _react2.default.PropTypes.func
 };
 
 exports.default = CarImages;
@@ -17328,49 +17340,57 @@ var CarInfoBox = function (_Component) {
 				_react2.default.createElement(
 					_reactBootstrap.Row,
 					null,
-					this.props.header
+					_react2.default.createElement(
+						'h4',
+						{ className: 'car-info-heading' },
+						this.props.header
+					)
 				),
 				_react2.default.createElement(
 					_reactBootstrap.Row,
 					null,
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
-						'cylinders'
+						{ md: 5, className: 'car-info-details' },
+						_react2.default.createElement(
+							'h6',
+							null,
+							'cylinders'
+						)
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5 },
 						this.props.car.cylinders
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5, className: 'car-info-details' },
 						'city MPG'
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5 },
 						this.props.car.cityMpg
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5, className: 'car-info-details' },
 						'highway MPG'
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5 },
 						this.props.car.highwayMpg
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5, className: 'car-info-details' },
 						'engine'
 					),
 					_react2.default.createElement(
 						_reactBootstrap.Col,
-						{ md: 6 },
+						{ md: 5 },
 						this.props.car.engine
 					)
 				)
