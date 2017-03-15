@@ -6,9 +6,15 @@ import React, { Component } from 'react'
 class Car extends Component {
 		render() {
 
+				const carName = this.props.car.carName
+				const carCityMpg = this.props.car.cityMpg + " MPG"
+				const carMileage = this.props.car.mileage + " mileage"
+
 				return (
 						<div> 
-							Cars! From the Car.js Component
+							<span className='detail'>{ carName }</span><br />
+							<span className='detail'>{ carCityMpg }</span><br />
+							<span className='detail'>{ carMileage }</span><br />
 						</div>
 
 					)
