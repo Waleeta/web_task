@@ -57,7 +57,7 @@ class Cars extends Component {
 
 				return (
 						<div> 
-							{listCars}
+							{ listCars }
 						</div>
 
 					)
