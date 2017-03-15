@@ -1,6 +1,8 @@
 // Here, we will have all of our car components
 import React, { Component } from 'react'
 import CarInfoBox from './CarInfoBox'
+import CarImages from './CarImages'
+import MainImageSideBar from './MainImageSideBar'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 
@@ -9,29 +11,26 @@ class Car extends Component {
 		render() {
 
 				const car = this.props.car;
-
-				const carName = car.carName
-				const carCityMpg = car.cityMpg + " MPG"
-				const carMileage = CarInfoBox.mileage + " mileage"
-				const carVin = car.vin
-
 				return (
 						<Grid> 
+						
 							<Row>
 								Nav Bar
 							</Row>
 							<Row>
-								Main image/sidebar
+								<Col md={7} >
+										<MainImageSideBar car={car} />
+								</Col>
 							</Row>
 							<Row>
-								images
+								<CarImages car={car}/>
 							</Row>
-						
+								
 							<Row> 
-								<Col md={3}>
+								<Col md={3} >
 									<CarInfoBox car={car} header={"Performance"}/>
 								</Col>
-								<Col md={3}> 
+								<Col md={3} > 
 									<CarInfoBox car={car} header={"Exterior"}/>
 								</Col>
 							</Row>

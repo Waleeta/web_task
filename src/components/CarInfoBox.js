@@ -30,6 +30,12 @@ class CarInfoBox extends Component {
 				<Col md={6}>
 					{this.props.car.highwayMpg}
 				</Col>
+				<Col md={6}> 
+					engine
+				</Col> 
+				<Col md={6}>
+					{this.props.car.engine}
+				</Col>
 			</Row>
 
 			</div>
