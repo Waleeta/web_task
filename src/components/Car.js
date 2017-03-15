@@ -2,7 +2,8 @@
 import React, { Component } from 'react'
 import CarInfoBox from './CarInfoBox'
 import CarImages from './CarImages'
-import MainImageSideBar from './MainImageSideBar'
+import MainImage from './MainImage'
+import SideBar from './SideBar'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 
@@ -18,21 +19,24 @@ class Car extends Component {
 								Nav Bar
 							</Row>
 							<Row>
-								<Col md={7} >
-										<MainImageSideBar car={car} />
-								</Col>
+									<Col md={6} >
+											<MainImage car={car} />
+									</Col>
+									<Col md={4} >
+											<SideBar car={car} />
+									</Col>
 							</Row>
 							<Row>
 								<CarImages car={car}/>
 							</Row>
 								
 							<Row> 
-								<Col md={3} >
-									<CarInfoBox car={car} header={"Performance"}/>
-								</Col>
-								<Col md={3} > 
-									<CarInfoBox car={car} header={"Exterior"}/>
-								</Col>
+									<Col md={4}>
+											<CarInfoBox car={car} header={"Performance"}/>
+									</Col>
+									<Col md={4} > 
+											<CarInfoBox car={car} header={"Exterior"}/>
+									</Col>
 							</Row>
 
 

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class CarImages extends Component {
 	render () {
 		return (
-			<div>
+			<div className='hidden-xs'>
 				<Row> 
 					 	<img
 			          style={{width: 100, height: 100}}

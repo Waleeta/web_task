@@ -11,7 +11,7 @@ class CarInfoBox extends Component {
 			<Row> 
 				{this.props.header}
 			</Row> 
-			<Row> 
+			<Row > 
 				<Col md={6}> 
 					cylinders	
 				</Col> 

@@ -17103,7 +17103,7 @@ exports.default = Cars;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17120,9 +17120,13 @@ var _CarImages = __webpack_require__(201);
 
 var _CarImages2 = _interopRequireDefault(_CarImages);
 
-var _MainImageSideBar = __webpack_require__(453);
+var _MainImage = __webpack_require__(454);
 
-var _MainImageSideBar2 = _interopRequireDefault(_MainImageSideBar);
+var _MainImage2 = _interopRequireDefault(_MainImage);
+
+var _SideBar = __webpack_require__(455);
+
+var _SideBar2 = _interopRequireDefault(_SideBar);
 
 var _reactBootstrap = __webpack_require__(104);
 
@@ -17137,60 +17141,65 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // view/presentational component
 var Car = function (_Component) {
-	_inherits(Car, _Component);
+		_inherits(Car, _Component);
 
-	function Car() {
-		_classCallCheck(this, Car);
+		function Car() {
+				_classCallCheck(this, Car);
 
-		return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
-	}
-
-	_createClass(Car, [{
-		key: 'render',
-		value: function render() {
-
-			var car = this.props.car;
-			return _react2.default.createElement(
-				_reactBootstrap.Grid,
-				null,
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
-					'Nav Bar'
-				),
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 7 },
-						_react2.default.createElement(_MainImageSideBar2.default, { car: car })
-					)
-				),
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
-					_react2.default.createElement(_CarImages2.default, { car: car })
-				),
-				_react2.default.createElement(
-					_reactBootstrap.Row,
-					null,
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 3 },
-						_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Performance" })
-					),
-					_react2.default.createElement(
-						_reactBootstrap.Col,
-						{ md: 3 },
-						_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Exterior" })
-					)
-				)
-			);
+				return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
 		}
-	}]);
 
-	return Car;
+		_createClass(Car, [{
+				key: 'render',
+				value: function render() {
+
+						var car = this.props.car;
+						return _react2.default.createElement(
+								_reactBootstrap.Grid,
+								null,
+								_react2.default.createElement(
+										_reactBootstrap.Row,
+										null,
+										'Nav Bar'
+								),
+								_react2.default.createElement(
+										_reactBootstrap.Row,
+										null,
+										_react2.default.createElement(
+												_reactBootstrap.Col,
+												{ md: 6 },
+												_react2.default.createElement(_MainImage2.default, { car: car })
+										),
+										_react2.default.createElement(
+												_reactBootstrap.Col,
+												{ md: 4 },
+												_react2.default.createElement(_SideBar2.default, { car: car })
+										)
+								),
+								_react2.default.createElement(
+										_reactBootstrap.Row,
+										null,
+										_react2.default.createElement(_CarImages2.default, { car: car })
+								),
+								_react2.default.createElement(
+										_reactBootstrap.Row,
+										null,
+										_react2.default.createElement(
+												_reactBootstrap.Col,
+												{ md: 4 },
+												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Performance" })
+										),
+										_react2.default.createElement(
+												_reactBootstrap.Col,
+												{ md: 4 },
+												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "Exterior" })
+										)
+								)
+						);
+				}
+		}]);
+
+		return Car;
 }(_react.Component);
 
 exports.default = Car;
@@ -17236,7 +17245,7 @@ var CarImages = function (_Component) {
 				value: function render() {
 						return _react2.default.createElement(
 								'div',
-								null,
+								{ className: 'hidden-xs' },
 								_react2.default.createElement(
 										_reactBootstrap.Row,
 										null,
@@ -42220,7 +42229,77 @@ var App = function (_Component) {
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
-/* 453 */
+/* 453 */,
+/* 454 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactBootstrap = __webpack_require__(104);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MainImage = function (_Component) {
+	_inherits(MainImage, _Component);
+
+	function MainImage() {
+		_classCallCheck(this, MainImage);
+
+		return _possibleConstructorReturn(this, (MainImage.__proto__ || Object.getPrototypeOf(MainImage)).apply(this, arguments));
+	}
+
+	_createClass(MainImage, [{
+		key: 'render',
+		value: function render() {
+			var carName = this.props.car.carName;
+
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactBootstrap.Row,
+					null,
+					_react2.default.createElement(
+						_reactBootstrap.Col,
+						null,
+						_react2.default.createElement(_reactBootstrap.Image, {
+
+							style: { width: 728, height: 432 },
+							src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg', responsive: true })
+					)
+				)
+			);
+		}
+	}]);
+
+	return MainImage;
+}(_react.Component);
+
+MainImage.propTypes = {
+	car: _react2.default.PropTypes.object.isRequired
+};
+
+exports.default = MainImage;
+
+/***/ }),
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42246,18 +42325,24 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MainImageSideBar = function (_Component) {
-		_inherits(MainImageSideBar, _Component);
+var SideBar = function (_Component) {
+		_inherits(SideBar, _Component);
 
-		function MainImageSideBar() {
-				_classCallCheck(this, MainImageSideBar);
+		function SideBar() {
+				_classCallCheck(this, SideBar);
 
-				return _possibleConstructorReturn(this, (MainImageSideBar.__proto__ || Object.getPrototypeOf(MainImageSideBar)).apply(this, arguments));
+				return _possibleConstructorReturn(this, (SideBar.__proto__ || Object.getPrototypeOf(SideBar)).apply(this, arguments));
 		}
 
-		_createClass(MainImageSideBar, [{
+		_createClass(SideBar, [{
 				key: 'render',
 				value: function render() {
+						var carName = this.props.car.carName;
+						var priceRange = this.props.car.priceRange;
+						var year = this.props.car.year;
+						var mileage = this.props.car.mileage;
+						var itemNum = this.props.car.itemNumber;
+						var vin = this.props.car.vin;
 
 						return _react2.default.createElement(
 								'div',
@@ -42267,30 +42352,63 @@ var MainImageSideBar = function (_Component) {
 										null,
 										_react2.default.createElement(
 												_reactBootstrap.Col,
-												{ md: 8 },
-												_react2.default.createElement(_reactBootstrap.Image, {
-
-														style: { width: 728, height: 432 },
-														src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg', responsive: true })
-										),
-										_react2.default.createElement(
-												_reactBootstrap.Col,
-												{ md: 3 },
-												'cylinders'
+												{ md: 4 },
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														carName,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														year,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														priceRange,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														mileage,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														itemNum,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														null,
+														' ',
+														vin,
+														' '
+												)
 										)
 								)
 						);
 				}
 		}]);
 
-		return MainImageSideBar;
+		return SideBar;
 }(_react.Component);
 
-MainImageSideBar.propTypes = {
+SideBar.propTypes = {
 		car: _react2.default.PropTypes.object.isRequired
 };
 
-exports.default = MainImageSideBar;
+exports.default = SideBar;
 
 /***/ })
 /******/ ]);
