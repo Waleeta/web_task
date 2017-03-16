@@ -1,4 +1,3 @@
-import { Grid, Row, Col, Image } from 'react-bootstrap'
 import React, { Component } from 'react'
 
 
@@ -7,16 +6,7 @@ class MainImage extends Component {
 		const carName = this.props.car.carName
 
 		return (
-				<div>
-						<Row> 
-							<Col>
-								<Image
-						        
-						        style={{width: 728, height: 432}}
-						   			src="https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg" responsive/>
-						   	</Col>
-						</Row> 
-				</div>
+								<img className='main-car-image' src="https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg" />
 			)
 	}
 }

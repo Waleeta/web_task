@@ -13,16 +13,16 @@ class SideBar extends Component {
 
 		return (
 				<div>
-						<Row> 
-								<Col md={4}> 
-										<h4> { carName } </h4>
-										<h4> { year } </h4>
-										<h4> { priceRange } </h4>
-										<h4> { mileage } </h4>
-										<h4> { itemNum } </h4>
-										<h4> { vin } </h4>
-								</Col> 
-						</Row> 
+						<div> 
+								<div md={4}> 
+										<h4 style={{color:'#343434'}} className='car-name'> { carName } </h4>
+										<h4 className='header-side-bar'> { year } </h4>
+										<h4 className='header-side-bar'> { priceRange } </h4>
+										<h4 className='header-side-bar'> { mileage } </h4>
+										<h4 className='header-side-bar'> { itemNum } </h4>
+										<h4 className='header-side-bar'> { vin } </h4>
+								</div> 
+						</div> 
 				</div>
 			)
 	}
