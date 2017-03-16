@@ -17,7 +17,7 @@ class Car extends Component {
 
 				const car = this.props.car;
 				return (
-						<div className='full-car'> 
+						<div> 
 						
 							<div className='nav-bar'>
 								Nav Bar

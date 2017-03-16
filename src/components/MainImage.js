@@ -6,13 +6,7 @@ class MainImage extends Component {
 		const carName = this.props.car.carName
 
 		return (
-				<div>
-						<div> 
-							<div className='main-car-image'>
-								<img src="https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg" />
-						  </div>
-						</div> 
-				</div>
+								<img className='main-car-image' src="https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg" />
 			)
 	}
 }

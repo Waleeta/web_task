@@ -16966,7 +16966,7 @@ var Car = function (_Component) {
 						var car = this.props.car;
 						return _react2.default.createElement(
 								'div',
-								{ className: 'full-car' },
+								null,
 								_react2.default.createElement(
 										'div',
 										{ className: 'nav-bar' },
@@ -17139,36 +17139,44 @@ var CarInfoBox = function (_Component) {
 			var mileage = this.props.car.mileage;
 
 			return _react2.default.createElement(
-				'div',
-				null,
+				'table',
+				{ className: 'car-info-table' },
 				_react2.default.createElement(
-					'div',
+					'th',
 					null,
 					_react2.default.createElement(
-						'h4',
-						{ className: 'car-info-heading' },
-						this.props.header
+						'td',
+						{ colspan: '2' },
+						_react2.default.createElement(
+							'h4',
+							{ className: 'car-info-heading' },
+							this.props.header
+						)
 					)
 				),
 				_react2.default.createElement(
-					'div',
+					'tr',
 					null,
 					_react2.default.createElement(
-						'div',
+						'td',
 						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
-							null,
+							{ className: 'first-heading' },
 							'cylinders'
 						)
 					),
 					_react2.default.createElement(
-						'div',
-						{ className: 'car-detail' },
+						'td',
+						{ className: 'car-info-details' },
 						this.props.car.cylinders
-					),
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
 					_react2.default.createElement(
-						'div',
+						'td',
 						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
@@ -17177,12 +17185,16 @@ var CarInfoBox = function (_Component) {
 						)
 					),
 					_react2.default.createElement(
-						'div',
-						null,
+						'td',
+						{ className: 'car-info-details' },
 						this.props.car.cityMpg
-					),
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
 					_react2.default.createElement(
-						'div',
+						'td',
 						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
@@ -17191,12 +17203,16 @@ var CarInfoBox = function (_Component) {
 						)
 					),
 					_react2.default.createElement(
-						'div',
-						null,
+						'td',
+						{ className: 'car-info-details' },
 						this.props.car.highwayMpg
-					),
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
 					_react2.default.createElement(
-						'div',
+						'td',
 						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
@@ -17205,8 +17221,8 @@ var CarInfoBox = function (_Component) {
 						)
 					),
 					_react2.default.createElement(
-						'div',
-						null,
+						'td',
+						{ className: 'car-info-details' },
 						this.props.car.engine
 					)
 				)
@@ -17263,19 +17279,7 @@ var MainImage = function (_Component) {
 		value: function render() {
 			var carName = this.props.car.carName;
 
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'div',
-						{ className: 'main-car-image' },
-						_react2.default.createElement('img', { src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' })
-					)
-				)
-			);
+			return _react2.default.createElement('img', { className: 'main-car-image', src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' });
 		}
 	}]);
 

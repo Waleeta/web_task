@@ -7,38 +7,46 @@ class CarInfoBox extends Component {
 		const mileage = this.props.car.mileage
 
 		return (
-			<div >
-				<div > 
-					<h4 className='car-info-heading'>{this.props.header}</h4>
-				</div> 
-				<div  > 
-					<div  className='car-info-details'> 
-						<h4>cylinders</h4>
-					</div> 
-					<div  className='car-detail'>
-						{this.props.car.cylinders}
-					</div>
-					<div  className='car-info-details'> 
-						<h4>city MPG	</h4>
-					</div> 
-					<div >
-						{this.props.car.cityMpg}
-					</div>
-					<div  className='car-info-details'> 
-						<h4>highway MPG	</h4>
-					</div> 
-					<div  >
-						{this.props.car.highwayMpg}
-					</div>
-					<div  className='car-info-details'> 
-						<h4>engine</h4>
-					</div> 
-					<div >
-						{this.props.car.engine}
-					</div>
-				</div>
+				<table  className="car-info-table"> 
+					<th>
+						<td colspan='2'>
+							<h4 className='car-info-heading'>{this.props.header}</h4>
+						</td>
+					</th>
+					<tr>
+						<td  className='car-info-details'> 
+							<h4 className='first-heading'>cylinders</h4>
+						</td> 
+						<td  className='car-info-details'>
+							{this.props.car.cylinders}
+						</td>
+					</tr>
+					<tr>
+						<td  className='car-info-details'> 
+							<h4>city MPG	</h4>
+						</td> 
+						<td className='car-info-details'>
+							{this.props.car.cityMpg}
+						</td>
+					</tr>
+					<tr>
+						<td  className='car-info-details'> 
+							<h4>highway MPG	</h4>
+						</td> 
+						<td  className='car-info-details'>
+							{this.props.car.highwayMpg}
+						</td>
+					</tr>
+					<tr>
+						<td  className='car-info-details'> 
+							<h4>engine</h4>
+						</td> 
+						<td className='car-info-details'>
+							{this.props.car.engine}
+						</td>
+					</tr>
+				</table>
 
-			</div>
 			)
 	}
 }
