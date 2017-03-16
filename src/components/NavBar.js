@@ -1,6 +1,4 @@
-import { Grid, Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
-
 
 class NavBar extends Component {
 	render () {
@@ -16,8 +14,6 @@ class NavBar extends Component {
 			)
 	}
 }
-
-
 
 
 

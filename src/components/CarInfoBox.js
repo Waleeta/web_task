@@ -8,43 +8,43 @@ class CarInfoBox extends Component {
 
 		return (
 				<table  className="car-info-table"> 
-					<th>
-						<td colSpan='2'>
-							<h4 className='car-info-heading'>{this.props.header}</h4>
-						</td>
-					</th>
-					<tr>
-						<td  className='car-info-details'> 
-							<h4 className='first-heading'>cylinders</h4>
-						</td> 
-						<td  className='car-info-details'>
-							{this.props.car.cylinders}
-						</td>
-					</tr>
-					<tr>
-						<td  className='car-info-details'> 
-							<h4>city MPG	</h4>
-						</td> 
-						<td className='car-info-details bold'>
-							{this.props.car.cityMpg}
-						</td>
-					</tr>
-					<tr>
-						<td  className='car-info-details'> 
-							<h4>highway MPG	</h4>
-						</td> 
-						<td  className='car-info-details'>
-							{this.props.car.highwayMpg}
-						</td>
-					</tr>
-					<tr >
-						<td className='car-info-details'> 
-							<h4>engine</h4>
-						</td> 
-						<td className='car-info-details'>
-							{this.props.car.engine}
-						</td>
-					</tr>
+						<th>
+								<td colSpan='2'>
+										<h4 className='car-info-heading'>{this.props.header}</h4>
+								</td>
+						</th>
+						<tr>
+								<td  className='car-info-details'> 
+										<h4 className='first-heading'>cylinders</h4>
+								</td> 
+								<td  className='car-info-details'>
+										{this.props.car.cylinders}
+								</td>
+						</tr>
+						<tr>
+								<td  className='car-info-details'> 
+										<h4>city MPG	</h4>
+								</td> 
+								<td className='car-info-details bold'>
+										{this.props.car.cityMpg}
+								</td>
+						</tr>
+						<tr>
+								<td  className='car-info-details'> 
+										<h4>highway MPG	</h4>
+								</td> 
+								<td  className='car-info-details'>
+										{this.props.car.highwayMpg}
+								</td>
+						</tr>
+						<tr >
+								<td className='car-info-details'> 
+										<h4>engine</h4>
+								</td> 
+								<td className='car-info-details'>
+										{this.props.car.engine}
+								</td>
+						</tr>
 				</table>
 
 			)
@@ -52,8 +52,8 @@ class CarInfoBox extends Component {
 }
 
 CarInfoBox.propTypes = { 
-	header: React.PropTypes.string.isRequired,
-	car: React.PropTypes.object.isRequired,
+		header: React.PropTypes.string.isRequired,
+		car: React.PropTypes.object.isRequired,
 };
 
 
