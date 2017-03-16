@@ -4,7 +4,7 @@ import CarInfoBox from './CarInfoBox'
 import CarImages from './CarImages'
 import MainImage from './MainImage'
 import SideBar from './SideBar'
-import { Grid, Row, Col } from 'react-bootstrap'
+// import { Grid, Row, Col } from 'react-bootstrap'
 
 
 // view/presentational component
@@ -17,36 +17,36 @@ class Car extends Component {
 
 				const car = this.props.car;
 				return (
-						<Grid className='full-car'> 
+						<div className='full-car'> 
 						
-							<Row className='nav-bar'>
+							<div className='nav-bar'>
 								Nav Bar
-							</Row>
-							<Row>
-									<Col md={7} className='main-car-image' >
+							</div>
+							<div>
+									<div className='main-car-image' >
 											<MainImage  car={car} />
-									</Col>
-									<Col md={5} className='side-bar-info'>
+									</div>
+									<div className='side-bar-info'>
 											<SideBar car={car} />
-									</Col>
-							</Row>
-							<Row className="car-images">
-								<Col md={10}>
+									</div>
+							</div>
+							<div className="car-images">
+								<div >
 									<CarImages car={car}/>
-								</Col>
-							</Row>
+								</div>
+							</div>
 								
-							<Row> 
-									<Col md={5} className='car-info-div'> 
+							<div className= 'clearfix'> 
+									<div className='car-info-div'> 
 											<CarInfoBox car={car} header={"EXTERIOR"}/>
-									</Col>
-									<Col md={5} className='car-info-div'>
+									</div>
+									<div className='car-info-div'>
 											<CarInfoBox car={car} header={"PERFORMANCE"}/>
-									</Col>
-							</Row>
+									</div>
+							</div>
 
 
-						</Grid>
+						</div>
 
 					)
 		}

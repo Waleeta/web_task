@@ -1,4 +1,4 @@
-import { Grid, Row, Col } from 'react-bootstrap'
+// import { Grid, Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
 
 
@@ -8,35 +8,35 @@ class CarInfoBox extends Component {
 
 		return (
 			<div >
-				<Row > 
+				<div > 
 					<h4 className='car-info-heading'>{this.props.header}</h4>
-				</Row> 
-				<Row  > 
-					<Col md={5} className='car-info-details'> 
-						<h6>cylinders</h6>
-					</Col> 
-					<Col md={5} >
+				</div> 
+				<div  > 
+					<div  className='car-info-details'> 
+						<h4>cylinders</h4>
+					</div> 
+					<div  className='car-detail'>
 						{this.props.car.cylinders}
-					</Col>
-					<Col md={5} className='car-info-details'> 
-						city MPG	
-					</Col> 
-					<Col md={5}>
+					</div>
+					<div  className='car-info-details'> 
+						<h4>city MPG	</h4>
+					</div> 
+					<div >
 						{this.props.car.cityMpg}
-					</Col>
-					<Col md={5} className='car-info-details'> 
-						highway MPG	
-					</Col> 
-					<Col md={5} >
+					</div>
+					<div  className='car-info-details'> 
+						<h4>highway MPG	</h4>
+					</div> 
+					<div  >
 						{this.props.car.highwayMpg}
-					</Col>
-					<Col md={5} className='car-info-details'> 
-						engine
-					</Col> 
-					<Col md={5}>
+					</div>
+					<div  className='car-info-details'> 
+						<h4>engine</h4>
+					</div> 
+					<div >
 						{this.props.car.engine}
-					</Col>
-				</Row>
+					</div>
+				</div>
 
 			</div>
 			)

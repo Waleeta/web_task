@@ -1,26 +1,122 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*End Reset*/
+
+@media only screen and (max-width: 1000px) {
+   
+    .car-images {
+    	display: none;
+    }
+
+    .nav-bar {
+    	width: 320px;
+    }
+
+    .full-car {
+    	width: 320px;
+    }
+
+    .car-info-div {
+    	width: 320px;
+    	clear: both;
+    }
+
+    .side-bar-info {
+    	width: 320px;
+    	clear: both;
+    }
+
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
+  display: table-cell;
+}
+
 
 a {
   color: #00B7FF;
 }
 
+
 .full-car {
 	background-color: #EFEFF2;
 	width: 1024px;
+
 }
 
 .car-images {
 	margin-top: 32px;
 	margin-bottom: 24px;
+	clear: left;
 
 }
 
 .image-gallery {
-	padding-left: 2px;
-	padding-right: 2px;
+	border: 1px solid #ffffff;
+
 
 }
 
@@ -28,7 +124,9 @@ a {
 	height: 266px;
 	width: 480px;
 	border: solid grey 1px;
+	float: left;
 	margin: 8px;
+	background-color: white;
 
 }
 
@@ -40,6 +138,20 @@ h4.car-info-heading {
 	padding-left: 40px;
 }
 
+.car-name {
+	font-weight: bold;
+	padding-top: 40px;
+	padding-bottom: 32px;
+}
+
+h4.header-side-bar {
+	font-family: 'HelveticaNeue';
+	font-size: 16px;
+	color: #9B9B9B;
+	margin-top: 8px;
+}
+
+
 .car-info-details {
 	color: #9B9B9B;
 	margin-left: 40px;
@@ -48,19 +160,24 @@ h4.car-info-heading {
 }
 
 
-
+.car-detail {
+	color: #343434;
+}
 
 .main-car-image {
-	width: 738;
-	height: 432;
+	float: left;
 }
 
 .side-bar-info {
-	width: 296;
-	height: 432;
+	clear: right;
 }
 
 .nav-bar {
-	width: 1024;
+	width: 1024px;
 	background-color: black;
+}
+
+.info-border {
+	border-bottom: solid black 1px;
+
 }
