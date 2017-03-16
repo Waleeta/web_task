@@ -16984,8 +16984,8 @@ var Car = function (_Component) {
 				{ className: 'full-car' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'nav-bar' },
-					_NavBar2.default
+					null,
+					_react2.default.createElement(_NavBar2.default, null)
 				),
 				_react2.default.createElement(
 					'div',
@@ -17389,7 +17389,10 @@ var NavBar = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('div', { className: 'nav-bar' })
+				_react2.default.createElement('div', { className: 'nav-bar-black' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' })
 			);
 		}
 	}]);
@@ -17520,9 +17523,46 @@ var SideBar = function (_Component) {
 										' '
 								),
 								_react2.default.createElement(
-										'div',
-										{ className: 'sidebar-icons' },
-										' Views     Saves      Shares '
+										'table',
+										null,
+										_react2.default.createElement(
+												'th',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
+														' Views '
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														' Saves '
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														' Shares '
+												)
+										),
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
+														' 100 '
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														' 34 '
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														' 54 '
+												)
+										)
 								)
 						);
 				}

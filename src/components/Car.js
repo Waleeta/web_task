@@ -32,8 +32,8 @@ class Car extends Component {
 
 						<div className='full-car'> 
 						
-							<div className='nav-bar'>
-								{NavBar}
+							<div>
+								<NavBar />
 							</div>
 							<div >
 									<div className='main-car-image' >

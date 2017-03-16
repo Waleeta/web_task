@@ -242,12 +242,19 @@ td.car-info-details:nth-child(even) {
 	font-size: 12px;
 }
 
-.nav-bar {
-	width: 1024px;
+.nav-bar-black {
+	width: 868px;
 	height: 56px;
+	float: left;
 	background-color: black;
 }
 
+.nav-bar-orange {
+	width: 52px;
+	height: 56px;
+	float: right;
+	background-color: orange;
+}
 
 
 .footer {
@@ -295,9 +302,10 @@ td.car-info-details:nth-child(even) {
     }
 
    	.footer {
-			width: 1024px;
+			width: 320px;
 			height: 86px;
 			background-color: black;
+			display: block;
 			
 		}
 

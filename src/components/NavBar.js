@@ -6,10 +6,12 @@ class NavBar extends Component {
 	render () {
 
 		return (
-				<div> 
-					<div className='nav-bar'>
-				   </div>
-				</div> 
+			<div>
+						<div className='nav-bar-black'></div>
+						<div className='nav-bar-orange'></div>
+						<div className='nav-bar-orange'></div>
+						<div className='nav-bar-orange'></div>
+			</div>
 
 			)
 	}
