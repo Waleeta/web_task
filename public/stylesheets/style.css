@@ -50,45 +50,6 @@ table {
 
 /*End Reset*/
 
-@media (max-width: 330px) {
-   
-    .car-images {
-    	display: none;
-    }
-
-    .nav-bar {
-    	width: 320px;
-    }
-
-    .full-car {
-    	width: 320px;
-    }
-
-    .car-info-div {
-    	width: 320px;
-    	clear: both;
-    }
-
-    .side-bar-info {
-    	width: 320px;
-    	clear: both;
-    }
-
-    .main-car-image {
-    	width: 320px;
-    	height: 256px;
-    	clear: both;
-    }
-
-   	.footer {
-			width: 1024px;
-			height: 86px;
-			background-color: black;
-			
-		}
-
-}
-
 .clearfix {
     overflow: auto;
 }
@@ -134,14 +95,6 @@ a {
 
 }
 
-.car-info-div {
-	height: 266px;
-	width: 480px;
-	border: solid grey 1px;
-	float: left;
-	background-color: white;
-	margin-bottom: 40px;
-}
 
 .car-info-details-engine {
 	border-bottom: none;
@@ -150,6 +103,13 @@ a {
 
 }
 
+.car-info-div {
+	height: 266px;
+	width: 480px;
+	float: left;
+	background-color: white;
+	margin-bottom: 40px;
+}
 
 .car-info-div:nth-child(odd) {
 	margin-left: 32px;
@@ -214,18 +174,29 @@ color: #343434;
 td.car-info-details {
 	padding-bottom: 12px;
 	padding-top: 12px;
+}
+
+tr {
 	border-bottom: 1px solid #EFEFF2;
 }
 
-td.car-info-details:nth-child(odd) {
-	width: 240px;
+tr:last-child {
+	border: none;
 }
+
+
+
+/*td.car-info-details:nth-child(odd) {
+	width: 240px;
+}*/
+
 
 td.car-info-details:nth-child(even) {
 	width: 160px;
 	padding-right: 130px;
 	text-align: right;
 }
+
 
 .first-heading {
 	padding-top: 0px;
@@ -288,5 +259,46 @@ td.car-info-details:nth-child(even) {
 
 .info-border {
 	border-bottom: solid black 1px;
+
+}
+
+
+
+@media (max-width: 480px) {
+   
+    .car-images {
+    	display: none;
+    }
+
+    .nav-bar {
+    	width: 320px;
+    }
+
+    .full-car {
+    	width: 320px;
+    }
+
+    .car-info-div {
+    	width: 320px;
+    	clear: both;
+    }
+
+    .side-bar-info {
+    	width: 320px;
+    	clear: both;
+    }
+
+    .main-car-image {
+    	width: 320px;
+    	height: 256px;
+    	clear: both;
+    }
+
+   	.footer {
+			width: 1024px;
+			height: 86px;
+			background-color: black;
+			
+		}
 
 }

@@ -17220,7 +17220,7 @@ var CarInfoBox = function (_Component) {
 					null,
 					_react2.default.createElement(
 						'td',
-						{ className: 'car-info-details-engine' },
+						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
 							null,
@@ -17229,7 +17229,7 @@ var CarInfoBox = function (_Component) {
 					),
 					_react2.default.createElement(
 						'td',
-						{ className: 'car-info-details-engine' },
+						{ className: 'car-info-details' },
 						this.props.car.engine
 					)
 				)

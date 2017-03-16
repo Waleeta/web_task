@@ -37,11 +37,11 @@ class CarInfoBox extends Component {
 							{this.props.car.highwayMpg}
 						</td>
 					</tr>
-					<tr>
-						<td  className='car-info-details-engine'> 
+					<tr >
+						<td className='car-info-details'> 
 							<h4>engine</h4>
 						</td> 
-						<td className='car-info-details-engine'>
+						<td className='car-info-details'>
 							{this.props.car.engine}
 						</td>
 					</tr>
