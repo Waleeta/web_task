@@ -34,9 +34,7 @@ class SideBar extends Component {
 				
 						<h4 className='side-bar-share'>	Share this car   <img src='https://image.flaticon.com/icons/png/128/20/20061.png' height='12px;' />	</h4>
 				
-						<table className='sidebar-icons'>
-								hello
-						</table>
+						<div className='sidebar-icons'> Views     Saves      Shares </div>
 				</div>
 
 		
