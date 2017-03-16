@@ -1,4 +1,3 @@
-import { Grid, Row, Col } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 
@@ -6,27 +5,25 @@ class CarImages extends Component {
 	render () {
 
 		return (
-			<div className = 'hidden-xs'>
+				<div className = 'hidden-xs'>
 
-				{ this.props.car.carImages.map((imageUrl) =>
-					{
-						
-						const clickImage=() => {
-							return this.props.onClickImage(imageUrl)
-						}
-		
-						return (
-							<img onClick={ clickImage }
-			          style={{width: 168, height: 168}}
-			          className='image-gallery'
-			          src={ imageUrl } />
-
-			       )
-		          		
-					})
-				} 
+						{ this.props.car.carImages.map((imageUrl) => {
+							
+								const clickImage=() => {
+										return this.props.onClickImage(imageUrl)
+								}
 			
-			</div>
+							return (
+									<img onClick={ clickImage }
+				          		style={{width: 168, height: 168}}
+				          		className='image-gallery'
+				          		src={ imageUrl } />
+				      	)
+			          		
+							})
+						} 
+			
+				</div>
 			)
 	}
 }

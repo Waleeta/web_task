@@ -47,13 +47,4 @@ export default {
 			})
 		},
 
-		put: () => {
-			
-		},
-
-		delete: () => {
-			
-		}
-
-
 }
