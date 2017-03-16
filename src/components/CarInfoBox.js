@@ -9,7 +9,7 @@ class CarInfoBox extends Component {
 		return (
 				<table  className="car-info-table"> 
 					<th>
-						<td colspan='2'>
+						<td colSpan='2'>
 							<h4 className='car-info-heading'>{this.props.header}</h4>
 						</td>
 					</th>
@@ -25,7 +25,7 @@ class CarInfoBox extends Component {
 						<td  className='car-info-details'> 
 							<h4>city MPG	</h4>
 						</td> 
-						<td className='car-info-details'>
+						<td className='car-info-details bold'>
 							{this.props.car.cityMpg}
 						</td>
 					</tr>
@@ -37,8 +37,8 @@ class CarInfoBox extends Component {
 							{this.props.car.highwayMpg}
 						</td>
 					</tr>
-					<tr>
-						<td  className='car-info-details'> 
+					<tr >
+						<td className='car-info-details'> 
 							<h4>engine</h4>
 						</td> 
 						<td className='car-info-details'>
