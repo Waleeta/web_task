@@ -156,14 +156,39 @@ h4.car-info-heading {
 	font-weight: bold;
 	padding-top: 40px;
 	padding-bottom: 32px;
+	font-size: 18px; 
 }
 
-h4.header-side-bar {
+h4.header {
 	font-family: 'HelveticaNeue';
-	font-size: 16px;
-	color: #9B9B9B;
-	margin-top: 8px;
+	font-size: 18px;
+	color: #343434;
+	font-weight: bold;
 }
+
+.header-side-bar {
+padding-bottom: 18px; 
+
+}
+
+
+.vin-info {
+	padding-top: 0px;
+	color: #9B9B9B
+
+}
+
+.item-num {
+	padding-bottom: 8px;
+}
+
+.header-title {
+	color: #9B9B9B;
+	font-family: 'HelveticaNeue';
+	padding-bottom: 9px;
+
+}
+
 
 td.car-info-details {
 	padding-bottom: 12px;
@@ -202,10 +227,21 @@ td.car-info-details:nth-child(even) {
 	clear: right;
 }
 
+.sideBar {
+	width: 254px;
+	height: 430px;
+	clear: right;
+	float: right;
+	padding-left: 40px;
+	background-color: white;
+
+}
+
 .nav-bar {
 	width: 1024px;
 	background-color: black;
 }
+
 
 .info-border {
 	border-bottom: solid black 1px;

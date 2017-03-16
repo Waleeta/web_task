@@ -47,7 +47,7 @@ class Cars extends Component {
 				})
 			}
 
-
+		
 		render() {
 			const listCars = this.state.list.map((car, i) => {
 						return (
