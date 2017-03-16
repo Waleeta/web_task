@@ -16976,9 +16976,9 @@ var Car = function (_Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			// this.onClickImage
 
 			var car = this.props.car;
+
 			return _react2.default.createElement(
 				'div',
 				{ className: 'full-car' },
@@ -17007,7 +17007,7 @@ var Car = function (_Component) {
 					_react2.default.createElement(
 						'div',
 						null,
-						_react2.default.createElement(_CarImages2.default, { car: car })
+						_react2.default.createElement(_CarImages2.default, { car: car, onClickImage: this.onClickImage })
 					)
 				),
 				_react2.default.createElement(
@@ -17077,16 +17077,18 @@ var CarImages = function (_Component) {
 	_createClass(CarImages, [{
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
 
 			return _react2.default.createElement(
 				'div',
 				{ className: 'hidden-xs' },
 				this.props.car.carImages.map(function (imageUrl) {
-					var onClickImage = function onClickImage() {
-						return onClickImage(imageUrl);
+
+					var clickImage = function clickImage() {
+						return _this2.props.onClickImage(imageUrl);
 					};
-					// function that calls onclickimage
-					return _react2.default.createElement('img', {
+
+					return _react2.default.createElement('img', { onClick: clickImage,
 						style: { width: 168, height: 168 },
 						className: 'image-gallery',
 						src: imageUrl });
@@ -17100,7 +17102,7 @@ var CarImages = function (_Component) {
 
 CarImages.propTypes = {
 	car: _react2.default.PropTypes.object.isRequired,
-	onClick: _react2.default.PropTypes.func
+	onClickImage: _react2.default.PropTypes.func
 };
 
 exports.default = CarImages;
@@ -17457,110 +17459,84 @@ var SideBar = function (_Component) {
 
 						return _react2.default.createElement(
 								'div',
-								{ md: 4, className: 'sideBar' },
+								null,
 								_react2.default.createElement(
-										'h4',
-										{ style: { color: '#343434' }, className: 'car-name' },
-										' ',
-										carName,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Year '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										year,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Price Range '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										newPrice,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Mileage '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										newMileage,
-										' miles '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Item Number: ',
-										itemNum,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'vin-info' },
-										' VIN ',
-										vin,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'side-bar-share' },
-										' Share this car   ',
-										_react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/png/128/20/20061.png', height: '12px;' }),
-										' '
-								),
-								_react2.default.createElement(
-										'table',
-										null,
+										'div',
+										{ md: 4, className: 'sideBar' },
 										_react2.default.createElement(
-												'th',
-												null,
+												'div',
+												{ md: 4, className: 'sideBar sideBar-title' },
 												_react2.default.createElement(
-														'td',
-														null,
-														' Views '
-												),
-												_react2.default.createElement(
-														'td',
-														null,
-														' Saves '
-												),
-												_react2.default.createElement(
-														'td',
-														null,
-														' Shares '
+														'h4',
+														{ style: { color: '#343434' }, className: 'car-name' },
+														' ',
+														carName,
+														' '
 												)
 										),
 										_react2.default.createElement(
-												'tr',
-												null,
+												'div',
+												{ md: 4, className: 'sideBar top' },
 												_react2.default.createElement(
-														'td',
-														null,
-														' 100 '
+														'h4',
+														{ className: 'header-title' },
+														' Year '
 												),
 												_react2.default.createElement(
-														'td',
-														null,
-														' 34 '
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														year,
+														' '
 												),
 												_react2.default.createElement(
-														'td',
-														null,
-														' 54 '
+														'h4',
+														{ className: 'header-title' },
+														' Price Range '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														newPrice,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Mileage '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														newMileage,
+														' miles '
+												)
+										),
+										_react2.default.createElement(
+												'div',
+												{ md: 4, className: 'sideBar bottom' },
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Item Number: ',
+														itemNum,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'vin-info' },
+														' VIN ',
+														vin,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'side-bar-share' },
+														' Share this car ',
+														_react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/png/128/20/20061.png', height: '12px;' }),
+														' '
 												)
 										)
 								)

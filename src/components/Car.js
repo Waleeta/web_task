@@ -20,14 +20,16 @@ class Car extends Component {
 			this.onClickImage = this.onClickImage.bind(this);
 		}
 
-		 onClickImage(imageUrl) { 
+		onClickImage(imageUrl) { 
 			this.setState({currentImage: imageUrl});
 		}
 
 		render() {
-				// this.onClickImage
 
 				const car = this.props.car;
+
+
+
 				return (
 
 						<div className='full-car'> 
@@ -45,7 +47,7 @@ class Car extends Component {
 							</div>
 							<div className="car-images">
 								<div >
-									<CarImages car={car}/>
+									<CarImages car={ car } onClickImage={ this.onClickImage }/>
 								</div>
 							</div>
 								

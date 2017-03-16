@@ -83,7 +83,7 @@ a {
 }
 
 .car-images {
-	margin-top: 32px;
+	padding-top: 32px;
 	margin-bottom: 24px;
 	clear: left;
 
@@ -223,12 +223,18 @@ td.car-info-details:nth-child(even) {
 
 .sideBar {
 	width: 254px;
-	height: 430px;
+	height: 171px;
 	clear: right;
 	float: right;
 	padding-left: 40px;
 	background-color: white;
 
+
+}
+
+.sideBar-title {
+	height: 60px;
+	padding-bottom: 32px;
 }
 
 .sidebar-icons {
@@ -240,6 +246,12 @@ td.car-info-details:nth-child(even) {
 	margin-top: 32px;
 	margin-bottom: 10px;
 	font-size: 12px;
+}
+
+.bottom {
+	padding-top: 32px;
+	/*padding-bottom: 0px;*/
+	height: 138px;
 }
 
 .nav-bar-black {
@@ -255,6 +267,13 @@ td.car-info-details:nth-child(even) {
 	float: right;
 	background-color: orange;
 }
+
+/*.views {
+	height: 5px;
+	width: 5px;
+	font-size: 3px;
+
+}*/
 
 
 .footer {
