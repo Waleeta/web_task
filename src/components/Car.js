@@ -4,6 +4,8 @@ import CarInfoBox from './CarInfoBox'
 import CarImages from './CarImages'
 import MainImage from './MainImage'
 import SideBar from './SideBar'
+import NavBar from './NavBar'
+import Footer from './Footer'
 // import { Grid, Row, Col } from 'react-bootstrap'
 
 
@@ -20,7 +22,7 @@ class Car extends Component {
 						<div> 
 						
 							<div className='nav-bar'>
-								Nav Bar
+								{NavBar}
 							</div>
 							<div>
 									<div className='main-car-image' >
@@ -45,6 +47,9 @@ class Car extends Component {
 									</div>
 							</div>
 
+							<div className='footer'>
+								<Footer />
+							</div>
 
 						</div>
 

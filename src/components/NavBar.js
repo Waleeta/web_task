@@ -2,17 +2,15 @@ import { Grid, Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
 
 
-class Navar extends Component {
+class NavBar extends Component {
 	render () {
 
 		return (
-				<div>
-						<Row> 
-							<Col>
-								Nothing here yet, folks!
-						   	</Col>
-						</Row> 
-				</div>
+				<div> 
+					<div className='nav-bar'>
+				   </div>
+				</div> 
+
 			)
 	}
 }
@@ -21,4 +19,4 @@ class Navar extends Component {
 
 
 
-export default Navbar
+export default NavBar

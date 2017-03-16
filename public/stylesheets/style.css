@@ -80,6 +80,13 @@ table {
     	clear: both;
     }
 
+   	.footer {
+			width: 1024px;
+			height: 86px;
+			background-color: black;
+			
+		}
+
 }
 
 .clearfix {
@@ -133,8 +140,16 @@ a {
 	border: solid grey 1px;
 	float: left;
 	background-color: white;
+	margin-bottom: 40px;
+}
+
+.car-info-details-engine {
+	border-bottom: none;
+	color: #9B9B9B;
+	padding-top: 16px;
 
 }
+
 
 .car-info-div:nth-child(odd) {
 	margin-left: 32px;
@@ -168,27 +183,33 @@ h4.header {
 
 .header-side-bar {
 padding-bottom: 18px; 
-
+font-weight: bold;
+font-family: 'HelveticaNeue';
+font-size: 18px;
+color: #343434;
 }
 
 
 .vin-info {
 	padding-top: 0px;
-	color: #9B9B9B
+	color: #9B9B9B;
+	margin-bottom: 0px;
+
 
 }
 
 .item-num {
 	padding-bottom: 8px;
+	font-family: 'HelveticaNeue';
 }
 
 .header-title {
 	color: #9B9B9B;
 	font-family: 'HelveticaNeue';
 	padding-bottom: 9px;
+	font-size: 12px;
 
 }
-
 
 td.car-info-details {
 	padding-bottom: 12px;
@@ -197,11 +218,12 @@ td.car-info-details {
 }
 
 td.car-info-details:nth-child(odd) {
-	width: 260px;
+	width: 240px;
 }
 
 td.car-info-details:nth-child(even) {
-	width: 140px;
+	width: 160px;
+	padding-right: 130px;
 	text-align: right;
 }
 
@@ -212,6 +234,7 @@ td.car-info-details:nth-child(even) {
 .car-info-details {
 	color: #9B9B9B;
 }
+
 
 .car-info-table {
 	margin: 40px 40px 0px 40px;
@@ -237,11 +260,31 @@ td.car-info-details:nth-child(even) {
 
 }
 
+.sidebar-icons {
+	margin-top: 32px;
+	font-size: 12px;
+}
+
+.side-bar-share {
+	margin-top: 32px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
 .nav-bar {
 	width: 1024px;
+	height: 56px;
 	background-color: black;
 }
 
+
+
+.footer {
+	width: 1024px;
+	height: 86px;
+	background-color: black;
+	display: none;
+}
 
 .info-border {
 	border-bottom: solid black 1px;

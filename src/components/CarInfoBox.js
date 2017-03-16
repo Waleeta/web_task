@@ -25,7 +25,7 @@ class CarInfoBox extends Component {
 						<td  className='car-info-details'> 
 							<h4>city MPG	</h4>
 						</td> 
-						<td className='car-info-details'>
+						<td className='car-info-details bold'>
 							{this.props.car.cityMpg}
 						</td>
 					</tr>
@@ -38,10 +38,10 @@ class CarInfoBox extends Component {
 						</td>
 					</tr>
 					<tr>
-						<td  className='car-info-details'> 
+						<td  className='car-info-details-engine'> 
 							<h4>engine</h4>
 						</td> 
-						<td className='car-info-details'>
+						<td className='car-info-details-engine'>
 							{this.props.car.engine}
 						</td>
 					</tr>
