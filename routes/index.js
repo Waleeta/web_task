@@ -13,6 +13,11 @@ router.get('/createcar', function(req, res, next) {
   res.render('createcar', null);
 });
 
+router.get('/updatecar', function(req, res, next) {
+	// var cars = Car.find()
+  res.render('updatecar', null);
+});
+
 
 
 

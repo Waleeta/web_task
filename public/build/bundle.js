@@ -16847,7 +16847,7 @@ var Cars = function (_Component) {
 				cityMpg: '',
 				highwayMpg: '',
 				engine: '',
-				carImages: []
+				carImages: ["https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg", "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg", "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg", "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg", "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg", "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg"]
 
 			},
 
@@ -16907,7 +16907,7 @@ exports.default = Cars;
 
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16954,79 +16954,86 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // view/presentational component
 var Car = function (_Component) {
-		_inherits(Car, _Component);
+	_inherits(Car, _Component);
 
-		function Car() {
-				_classCallCheck(this, Car);
+	function Car(props) {
+		_classCallCheck(this, Car);
 
-				return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this, props));
+
+		_this.state = {
+			currentImage: props.car.carImages[0]
+		};
+		_this.onClickImage = _this.onClickImage.bind(_this);
+		return _this;
+	}
+
+	_createClass(Car, [{
+		key: 'onClickImage',
+		value: function onClickImage(imageUrl) {
+			this.setState({ currentImage: imageUrl });
 		}
+	}, {
+		key: 'render',
+		value: function render() {
 
-		_createClass(Car, [{
-				key: 'render',
+			var car = this.props.car;
 
+			return _react2.default.createElement(
+				'div',
+				{ className: 'full-car' },
+				_react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(_NavBar2.default, null)
+				),
+				_react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'div',
+						{ className: 'main-car-image' },
+						_react2.default.createElement(_MainImage2.default, { currentImage: this.state.currentImage })
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'side-bar-info' },
+						_react2.default.createElement(_SideBar2.default, { car: car })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'car-images' },
+					_react2.default.createElement(
+						'div',
+						null,
+						_react2.default.createElement(_CarImages2.default, { car: car, onClickImage: this.onClickImage })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'clearfix' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'car-info-div' },
+						_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "EXTERIOR" })
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'car-info-div' },
+						_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "PERFORMANCE" })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'footer' },
+					_react2.default.createElement(_Footer2.default, null)
+				)
+			);
+		}
+	}]);
 
-				// set initial state to {currentImage: props.car.carImages[0]}
-				// 
-
-				value: function render() {
-
-						var car = this.props.car;
-						return _react2.default.createElement(
-								'div',
-								null,
-								_react2.default.createElement(
-										'div',
-										{ className: 'nav-bar' },
-										_NavBar2.default
-								),
-								_react2.default.createElement(
-										'div',
-										null,
-										_react2.default.createElement(
-												'div',
-												{ className: 'main-car-image' },
-												_react2.default.createElement(_MainImage2.default, { car: car })
-										),
-										_react2.default.createElement(
-												'div',
-												{ className: 'side-bar-info' },
-												_react2.default.createElement(_SideBar2.default, { car: car })
-										)
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'car-images' },
-										_react2.default.createElement(
-												'div',
-												null,
-												_react2.default.createElement(_CarImages2.default, { car: car })
-										)
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'clearfix' },
-										_react2.default.createElement(
-												'div',
-												{ className: 'car-info-div' },
-												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "EXTERIOR" })
-										),
-										_react2.default.createElement(
-												'div',
-												{ className: 'car-info-div' },
-												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "PERFORMANCE" })
-										)
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'footer' },
-										_react2.default.createElement(_Footer2.default, null)
-								)
-						);
-				}
-		}]);
-
-		return Car;
+	return Car;
 }(_react.Component);
 
 exports.default = Car;
@@ -17039,7 +17046,7 @@ exports.default = Car;
 
 
 Object.defineProperty(exports, "__esModule", {
-							value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17059,54 +17066,43 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CarImages = function (_Component) {
-							_inherits(CarImages, _Component);
+	_inherits(CarImages, _Component);
 
-							function CarImages() {
-														_classCallCheck(this, CarImages);
+	function CarImages() {
+		_classCallCheck(this, CarImages);
 
-														return _possibleConstructorReturn(this, (CarImages.__proto__ || Object.getPrototypeOf(CarImages)).apply(this, arguments));
-							}
+		return _possibleConstructorReturn(this, (CarImages.__proto__ || Object.getPrototypeOf(CarImages)).apply(this, arguments));
+	}
 
-							_createClass(CarImages, [{
-														key: 'render',
-														value: function render() {
-																					return _react2.default.createElement(
-																												'div',
-																												{ className: 'hidden-xs' },
-																												_react2.default.createElement('img', {
-																																			style: { width: 168, height: 168 },
-																																			className: 'image-gallery',
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' }),
-																												_react2.default.createElement('img', {
-																																			className: 'image-gallery',
-																																			style: { width: 168, height: 168 },
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg' }),
-																												_react2.default.createElement('img', {
-																																			className: 'image-gallery',
-																																			style: { width: 168, height: 168 },
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg' }),
-																												_react2.default.createElement('img', {
-																																			className: 'image-gallery',
-																																			style: { width: 168, height: 168 },
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg' }),
-																												_react2.default.createElement('img', {
-																																			className: 'image-gallery',
-																																			style: { width: 168, height: 168 },
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg' }),
-																												_react2.default.createElement('img', {
-																																			className: 'image-gallery',
-																																			style: { width: 168, height: 168 },
-																																			src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg' })
-																					);
-														}
-							}]);
+	_createClass(CarImages, [{
+		key: 'render',
+		value: function render() {
+			var _this2 = this;
 
-							return CarImages;
+			return _react2.default.createElement(
+				'div',
+				{ className: 'hidden-xs' },
+				this.props.car.carImages.map(function (imageUrl) {
+
+					var clickImage = function clickImage() {
+						return _this2.props.onClickImage(imageUrl);
+					};
+
+					return _react2.default.createElement('img', { onClick: clickImage,
+						style: { width: 168, height: 168 },
+						className: 'image-gallery',
+						src: imageUrl });
+				})
+			);
+		}
+	}]);
+
+	return CarImages;
 }(_react.Component);
 
 CarImages.propTypes = {
-							car: _react2.default.PropTypes.object.isRequired,
-							onClick: _react2.default.PropTypes.func
+	car: _react2.default.PropTypes.object.isRequired,
+	onClickImage: _react2.default.PropTypes.func
 };
 
 exports.default = CarImages;
@@ -17159,7 +17155,7 @@ var CarInfoBox = function (_Component) {
 					null,
 					_react2.default.createElement(
 						'td',
-						{ colspan: '2' },
+						{ colSpan: '2' },
 						_react2.default.createElement(
 							'h4',
 							{ className: 'car-info-heading' },
@@ -17226,7 +17222,7 @@ var CarInfoBox = function (_Component) {
 					null,
 					_react2.default.createElement(
 						'td',
-						{ className: 'car-info-details-engine' },
+						{ className: 'car-info-details' },
 						_react2.default.createElement(
 							'h4',
 							null,
@@ -17235,7 +17231,7 @@ var CarInfoBox = function (_Component) {
 					),
 					_react2.default.createElement(
 						'td',
-						{ className: 'car-info-details-engine' },
+						{ className: 'car-info-details' },
 						this.props.car.engine
 					)
 				)
@@ -17337,9 +17333,9 @@ var MainImage = function (_Component) {
 	_createClass(MainImage, [{
 		key: 'render',
 		value: function render() {
-			var carName = this.props.car.carName;
+			// const carName = this.props.car.carName
 
-			return _react2.default.createElement('img', { className: 'main-car-image', src: 'https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg' });
+			return _react2.default.createElement('img', { className: 'main-car-image', src: this.props.currentImage });
 		}
 	}]);
 
@@ -17347,7 +17343,7 @@ var MainImage = function (_Component) {
 }(_react.Component);
 
 MainImage.propTypes = {
-	car: _react2.default.PropTypes.object.isRequired
+	currentImage: _react2.default.PropTypes.string
 };
 
 exports.default = MainImage;
@@ -17395,7 +17391,10 @@ var NavBar = function (_Component) {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('div', { className: 'nav-bar' })
+				_react2.default.createElement('div', { className: 'nav-bar-black' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
+				_react2.default.createElement('div', { className: 'nav-bar-orange' })
 			);
 		}
 	}]);
@@ -17460,75 +17459,86 @@ var SideBar = function (_Component) {
 
 						return _react2.default.createElement(
 								'div',
-								{ md: 4, className: 'sideBar' },
+								null,
 								_react2.default.createElement(
-										'h4',
-										{ style: { color: '#343434' }, className: 'car-name' },
-										' ',
-										carName,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Year '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										year,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Price Range '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										newPrice,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Mileage '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-side-bar' },
-										' ',
-										newMileage,
-										' miles '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'header-title' },
-										' Item Number: ',
-										itemNum,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'vin-info' },
-										' VIN ',
-										vin,
-										' '
-								),
-								_react2.default.createElement(
-										'h4',
-										{ className: 'side-bar-share' },
-										' Share this car   ',
-										_react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/png/128/20/20061.png', height: '12px;' }),
-										' '
-								),
-								_react2.default.createElement(
-										'table',
-										{ className: 'sidebar-icons' },
-										'hello'
+										'div',
+										{ md: 4, className: 'sideBar' },
+										_react2.default.createElement(
+												'div',
+												{ md: 4, className: 'sideBar sideBar-title' },
+												_react2.default.createElement(
+														'h4',
+														{ style: { color: '#343434' }, className: 'car-name' },
+														' ',
+														carName,
+														' '
+												)
+										),
+										_react2.default.createElement(
+												'div',
+												{ md: 4, className: 'sideBar top' },
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Year '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														year,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Price Range '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														newPrice,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Mileage '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-side-bar' },
+														' ',
+														newMileage,
+														' miles '
+												)
+										),
+										_react2.default.createElement(
+												'div',
+												{ md: 4, className: 'sideBar bottom' },
+												_react2.default.createElement(
+														'h4',
+														{ className: 'header-title' },
+														' Item Number: ',
+														itemNum,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'vin-info' },
+														' VIN ',
+														vin,
+														' '
+												),
+												_react2.default.createElement(
+														'h4',
+														{ className: 'side-bar-share' },
+														' Share this car ',
+														_react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/png/128/20/20061.png', height: '12px;' }),
+														' '
+												)
+										)
 								)
 						);
 				}

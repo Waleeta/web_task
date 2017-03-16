@@ -20,7 +20,14 @@ class Cars extends Component {
 				cityMpg: '',
 				highwayMpg: '',
 				engine: '',
-				carImages: [],
+				carImages: [
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg",
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg",
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg",
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg",
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg",
+					"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg"
+				],
 
 			},
 

@@ -12,21 +12,34 @@ import Footer from './Footer'
 // view/presentational component
 class Car extends Component {
 
-		// set initial state to {currentImage: props.car.carImages[0]}
-		// 
+		constructor(props) { 
+			super(props);
+			this.state = {
+				currentImage: props.car.carImages[0]
+			};
+			this.onClickImage = this.onClickImage.bind(this);
+		}
+
+		onClickImage(imageUrl) { 
+			this.setState({currentImage: imageUrl});
+		}
 
 		render() {
 
 				const car = this.props.car;
+
+
+
 				return (
-						<div> 
+
+						<div className='full-car'> 
 						
-							<div className='nav-bar'>
-								{NavBar}
-							</div>
 							<div>
+								<NavBar />
+							</div>
+							<div >
 									<div className='main-car-image' >
-											<MainImage  car={car} />
+											<MainImage  currentImage={this.state.currentImage} />
 									</div>
 									<div className='side-bar-info'>
 											<SideBar car={car} />
@@ -34,7 +47,7 @@ class Car extends Component {
 							</div>
 							<div className="car-images">
 								<div >
-									<CarImages car={car}/>
+									<CarImages car={ car } onClickImage={ this.onClickImage }/>
 								</div>
 							</div>
 								
