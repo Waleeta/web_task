@@ -16981,7 +16981,7 @@ var Car = function (_Component) {
 			var car = this.props.car;
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'full-car' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'nav-bar' },

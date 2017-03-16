@@ -30,12 +30,12 @@ class Car extends Component {
 				const car = this.props.car;
 				return (
 
-						<div> 
+						<div className='full-car'> 
 						
 							<div className='nav-bar'>
 								{NavBar}
 							</div>
-							<div>
+							<div >
 									<div className='main-car-image' >
 											<MainImage  currentImage={this.state.currentImage} />
 									</div>
