@@ -10,4 +10,4 @@ Seed the database:  navigate to seeds folder, run ’seed’ command. If that fa
 
 Sizing down the window to 320 will trigger the mobile view
 
-Find a quick demo [Here!](https://youtu.be/aughU3fDVy0)
+Find a quick demo [Here!](https://www.youtube.com/watch?v=F7L6mSoR_6g&ab_channel=WaleetaCanon)
