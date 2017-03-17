@@ -319,6 +319,13 @@ td.car-info-details:nth-child(even) {
     	display: none;
     }
 
+    .icons {
+    	vertical-align: middle;
+    	margin-left: 10px;
+    	width: 20px;
+    	text-align: center;
+    }
+
 
     .main-car-image {
     	width: 320px;

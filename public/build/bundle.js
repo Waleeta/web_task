@@ -17390,7 +17390,6 @@ var NavBar = function (_Component) {
 	_createClass(NavBar, [{
 		key: 'render',
 		value: function render() {
-
 			return _react2.default.createElement(
 				'div',
 				{ className: 'nav-bar' },
