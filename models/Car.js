@@ -15,7 +15,12 @@ var CarSchema = new mongoose.Schema({
 		cityMpg: {type: Number, default: 0},
 		highwayMpg: {type: Number, default: 0},
 		engine: {type: SchemaTypes.Double, default: 1.3},
-		carImages: {type: Array, default: []},
+		carImages: {type: Array, default: [ "https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg",
+							"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg",
+							"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg",
+							"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg",
+							"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg",
+							"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg" ]},
 		timestamp: {type: Date, default: Date.now}
 })
 
