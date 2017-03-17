@@ -26,7 +26,7 @@ class Car extends Component {
 				const car = this.props.car;
 				
 				return (
-						<div className='full-car'> 
+						<div className='full-car light-gray'> 
 						
 								<div>
 									<NavBar />
@@ -44,7 +44,7 @@ class Car extends Component {
 												<CarImages car={ car } onClickImage={ this.onClickImage }/>
 										</div>
 								</div>
-										
+								<div className="call">Call Me</div>
 								<div className= 'clearfix'> 
 										<div className='car-info-div'> 
 													<CarInfoBox car={car} header={"EXTERIOR"}/>

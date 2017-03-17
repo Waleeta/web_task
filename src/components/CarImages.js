@@ -15,7 +15,7 @@ class CarImages extends Component {
 			
 							return (
 									<img onClick={ clickImage }
-				          		style={{width: 168, height: 168}}
+				          		
 				          		className='image-gallery'
 				          		src={ imageUrl } />
 				      	)
