@@ -233,7 +233,7 @@ h6 { font-size: 10px;										}
 	height: 60px;
 	margin-top: 16px;
 	margin-bottom: 16px;
-	background-color: #106838;
+	background-color: #3fb34a;
 }
 
 
@@ -448,7 +448,23 @@ td.car-info-details:nth-child(even) {
 			background-color: black;
 			display: block;
 			float: none;
-			
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.footer-data-top {
+			line-height: 20px;
+			padding-bottom: 15px;
+			padding-top: 10px;
+			font-size: 12px;
+
+		}
+
+		.footer-data-bottom {
+			line-height: 20px;
+			height: 20px;
+			font-size: 10px;
+			padding-bottom: 5px;
 		}
 
 }
