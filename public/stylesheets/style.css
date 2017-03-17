@@ -359,11 +359,22 @@ td.car-info-details:nth-child(even) {
     	margin: 0px;
     	width: 260px;
     	float: none;
+    	margin-left: 40px;
     }
+
+    td {
+    	width: 200px;
+    }
+
+    /*.exterior {
+    	height: 240px;
+
+    }*/
 
     .clearfix {
     	width: 320px;
     }
+
 
     .sideBar-title {
     	width: 320px;
@@ -416,10 +427,12 @@ td.car-info-details:nth-child(even) {
     .car-info-div {
     	margin: 0px;
     	float: none;
+    	height: 240px;
     }
 
     .car-info-div:nth-child(odd) {
     	margin: 0px;
+    	margin-bottom: 8px;
     }
 
     .car-info-div:nth-child(even) {

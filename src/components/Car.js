@@ -46,7 +46,7 @@ class Car extends Component {
 								</div>
 								<div className="call">Call Me</div>
 								<div className= 'clearfix'> 
-										<div className='car-info-div'> 
+										<div className='car-info-div exterior'> 
 													<CarInfoBox car={car} header={"EXTERIOR"}/>
 										</div>
 										<div className='car-info-div'>

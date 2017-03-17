@@ -17009,7 +17009,7 @@ var Car = function (_Component) {
 										{ className: 'clearfix' },
 										_react2.default.createElement(
 												'div',
-												{ className: 'car-info-div' },
+												{ className: 'car-info-div exterior' },
 												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "EXTERIOR" })
 										),
 										_react2.default.createElement(
