@@ -6,7 +6,12 @@ class Footer extends Component {
 
 		return (
 				<div className='footer'>
-						
+						<div className='footer-data-top'>
+						About Us  /  Terms  /  Privacy Policy 
+						</div>
+						<div className='footer-data-bottom'>
+						PLS is a registered service mark and other marks are service marks of PLS Financial Services, Inc. 
+						</div>
 				</div>
 			)
 	}

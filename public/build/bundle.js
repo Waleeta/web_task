@@ -17002,14 +17002,14 @@ var Car = function (_Component) {
 								_react2.default.createElement(
 										'div',
 										{ className: 'call' },
-										'Call Me'
+										'CALL US'
 								),
 								_react2.default.createElement(
 										'div',
 										{ className: 'clearfix' },
 										_react2.default.createElement(
 												'div',
-												{ className: 'car-info-div' },
+												{ className: 'car-info-div exterior' },
 												_react2.default.createElement(_CarInfoBox2.default, { car: car, header: "EXTERIOR" })
 										),
 										_react2.default.createElement(
@@ -17251,7 +17251,7 @@ exports.default = CarInfoBox;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17269,23 +17269,36 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Footer = function (_Component) {
-	_inherits(Footer, _Component);
+		_inherits(Footer, _Component);
 
-	function Footer() {
-		_classCallCheck(this, Footer);
+		function Footer() {
+				_classCallCheck(this, Footer);
 
-		return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	}
-
-	_createClass(Footer, [{
-		key: 'render',
-		value: function render() {
-
-			return _react2.default.createElement('div', { className: 'footer' });
+				return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
 		}
-	}]);
 
-	return Footer;
+		_createClass(Footer, [{
+				key: 'render',
+				value: function render() {
+
+						return _react2.default.createElement(
+								'div',
+								{ className: 'footer' },
+								_react2.default.createElement(
+										'div',
+										{ className: 'footer-data-top' },
+										'About Us  /  Terms  /  Privacy Policy'
+								),
+								_react2.default.createElement(
+										'div',
+										{ className: 'footer-data-bottom' },
+										'PLS is a registered service mark and other marks are service marks of PLS Financial Services, Inc.'
+								)
+						);
+				}
+		}]);
+
+		return Footer;
 }(_react.Component);
 
 exports.default = Footer;
@@ -17377,7 +17390,6 @@ var NavBar = function (_Component) {
 	_createClass(NavBar, [{
 		key: 'render',
 		value: function render() {
-
 			return _react2.default.createElement(
 				'div',
 				{ className: 'nav-bar' },
@@ -17510,7 +17522,7 @@ var SideBar = function (_Component) {
 												{ className: 'sideBar bottom ' },
 												_react2.default.createElement(
 														'h5',
-														{ className: 'sidebar-label medium-gray' },
+														{ className: 'sidebar-label medium-gray item' },
 														' Item Number: ',
 														itemNum,
 														' '

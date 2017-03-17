@@ -44,9 +44,9 @@ class Car extends Component {
 												<CarImages car={ car } onClickImage={ this.onClickImage }/>
 										</div>
 								</div>
-								<div className="call">Call Me</div>
+								<div className="call">CALL US</div>
 								<div className= 'clearfix'> 
-										<div className='car-info-div'> 
+										<div className='car-info-div exterior'> 
 													<CarInfoBox car={car} header={"EXTERIOR"}/>
 										</div>
 										<div className='car-info-div'>
