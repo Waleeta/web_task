@@ -107,7 +107,7 @@ h6 { font-size: 10px;										}
 /* -------- HEADER BAR -------- */
 
 .nav-bar-black {
-	width: 868px;
+	width: 841px;
 	height: 56px;
 	float: left;
 	background-color: black;
@@ -115,13 +115,35 @@ h6 { font-size: 10px;										}
 
 
 .nav-bar-orange {
-	width: 52px;
+	width: 60px;
 	height: 56px;
-	float: right;
+	float: left;
+	background-color: orange;
+	border-right: 1px solid #ffffff;
+	transform: skewX(-20deg);
+}
+
+
+.nav-bar-orange:nth-child(2) {
+		margin-left: -10px;
+	}
+
+.nav-bar-orange:nth-child(4) {
+		border-right: none;
+	}
+
+.orange-corner {
+	width: 60px;
+	height: 56px;
+	float: left;
+	margin-left: -49px;
 	background-color: orange;
 }
 
+
 /* -------- MAIN IMAGE AND SIDEBAR -------- */
+
+
 
 .main-car-image {
 	float: left;
@@ -258,44 +280,6 @@ td.car-info-details:nth-child(even) {
 
 
 
-
-.first-heading {
-	padding-top: 0px;
-}
-
-.car-info-details {
-	color: #9B9B9B;
-}
-
-
-
-
-
-.side-bar-info {
-	clear: right;
-}
-
-
-
-
-
-.sidebar-icons {
-	color: #9B9B9B;
-	font-size: 12px;
-}
-
-
-
-
-
-.views-shares {
-	height: 40px;
-	width: 40px;
-	font-size: 12px;
-
-}
-
-
 .footer {
 	width: 1024px;
 	height: 86px;
@@ -303,41 +287,97 @@ td.car-info-details:nth-child(even) {
 	display: none;
 }
 
-.info-border {
-	border-bottom: solid black 1px;
-
-}
 
 
 
 @media (max-width: 480px) {
    
-    .car-images {
-    	display: none;
-    }
-
-    .nav-bar {
-    	width: 320px;
-    }
-
     .full-car {
     	width: 320px;
     }
 
-    .car-info-div {
-    	width: 320px;
-    	clear: both;
+    .nav-bar-black {
+    	width: 280px;
+    	float: none;
     }
 
-    .side-bar-info {
-    	width: 320px;
-    	clear: both;
+    .nav-bar-orange {
+    	display: none;
+    }
+
+    .nav-bar-orange:nth-child(3) {
+    	width: 20px;
+    	
+    }
+
+    .orange-corner {
+    	display: none;
     }
 
     .main-car-image {
     	width: 320px;
     	height: 256px;
-    	clear: both;
+    	float: none;
+    }
+
+    .car-images {
+    	display: none;
+
+    }
+
+    .sideBar {
+    	width: 320px;
+    	/*clear: both;*/
+    	margin-left: 0px;
+    	float: none;
+    	padding-left: 0px;
+
+    }
+
+   .hide {
+   	display: none;
+   }
+
+    table {
+    	margin: 0px;
+    	width: 260px;
+    	float: none;
+    }
+
+    .clearfix {
+    	width: 320px;
+    }
+
+    .sideBar-title {
+    	width: 320px;
+    	float: none;
+    }
+
+    .top {
+    	width: 160px;
+    	height: 196px;
+    	float: left;
+    }
+
+    .bottom {
+    	width: 160px;
+    	height: 196px;
+    	float: left;
+    }
+
+
+
+    .car-info-div {
+    	margin: 0px;
+    	float: none;
+    }
+
+    .car-info-div:nth-child(odd) {
+    	margin: 0px;
+    }
+
+    .car-info-div:nth-child(even) {
+    	margin: 0px;
     }
 
    	.footer {
@@ -345,6 +385,7 @@ td.car-info-details:nth-child(even) {
 			height: 86px;
 			background-color: black;
 			display: block;
+			float: none;
 			
 		}
 

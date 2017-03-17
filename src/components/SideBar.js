@@ -33,7 +33,7 @@ class SideBar extends Component {
 										<h5 className='sidebar-label medium-gray'> Mileage </h5>
 										<h3 className='bold dark-gray'> { newMileage } miles </h3>
 								</div>
-								<div className='sideBar bottom clearfix'>
+								<div className='sideBar bottom '>
 										<h5 className='sidebar-label medium-gray'> Item Number: { itemNum } </h5>
 										<h5 className='vin-info medium-gray'> VIN: {vin} </h5> 
 										<h5 className='side-bar-share dark-gray'>	Share this car <img src='https://image.flaticon.com/icons/png/128/20/20061.png' height='12px;' />	</h5>
@@ -41,11 +41,11 @@ class SideBar extends Component {
 											<h5 className='medium-gray social-label'>Views</h5>
 											<h3 className='light-green bold'>37</h3>
 										</div>
-										<div className='social-proof'>
+										<div className='social-proof hide'>
 											<h5 className='medium-gray social-label'>Saves</h5>
 											<h3 className='light-green bold'>20</h3>
 										</div>
-										<div className='social-proof'>
+										<div className='social-proof hide'>
 											<h5 className='medium-gray social-label'>Shares</h5>
 											<h3 className='light-green bold'>15</h3>
 										</div>

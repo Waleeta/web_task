@@ -17136,7 +17136,7 @@ var CarInfoBox = function (_Component) {
 
 						return _react2.default.createElement(
 								'table',
-								null,
+								{ className: 'medium-gray' },
 								_react2.default.createElement(
 										'th',
 										null,
@@ -17145,7 +17145,7 @@ var CarInfoBox = function (_Component) {
 												null,
 												_react2.default.createElement(
 														'h3',
-														{ className: 'car-info-heading bold medium-gray' },
+														{ className: 'car-info-heading bold' },
 														this.props.header
 												)
 										)
@@ -17155,16 +17155,16 @@ var CarInfoBox = function (_Component) {
 										null,
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												null,
 												_react2.default.createElement(
 														'h4',
-														{ className: 'first-heading' },
+														null,
 														'cylinders'
 												)
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details bold' },
+												{ className: 'bold' },
 												this.props.car.cylinders
 										)
 								),
@@ -17173,7 +17173,7 @@ var CarInfoBox = function (_Component) {
 										null,
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												null,
 												_react2.default.createElement(
 														'h4',
 														null,
@@ -17182,7 +17182,7 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details bold' },
+												{ className: 'bold' },
 												this.props.car.cityMpg,
 												' MPG'
 										)
@@ -17192,7 +17192,7 @@ var CarInfoBox = function (_Component) {
 										null,
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												null,
 												_react2.default.createElement(
 														'h4',
 														null,
@@ -17201,7 +17201,7 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details bold' },
+												{ className: 'bold' },
 												this.props.car.highwayMpg,
 												' MPG'
 										)
@@ -17211,7 +17211,7 @@ var CarInfoBox = function (_Component) {
 										null,
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												null,
 												_react2.default.createElement(
 														'h4',
 														null,
@@ -17220,7 +17220,7 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details bold' },
+												{ className: 'bold' },
 												this.props.car.engine
 										)
 								)
@@ -17375,11 +17375,12 @@ var NavBar = function (_Component) {
 
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'nav-bar' },
 				_react2.default.createElement('div', { className: 'nav-bar-black' }),
 				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
 				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
-				_react2.default.createElement('div', { className: 'nav-bar-orange' })
+				_react2.default.createElement('div', { className: 'nav-bar-orange' }),
+				_react2.default.createElement('div', { className: 'orange-corner' })
 			);
 		}
 	}]);
@@ -17501,7 +17502,7 @@ var SideBar = function (_Component) {
 										),
 										_react2.default.createElement(
 												'div',
-												{ className: 'sideBar bottom clearfix' },
+												{ className: 'sideBar bottom ' },
 												_react2.default.createElement(
 														'h5',
 														{ className: 'sidebar-label medium-gray' },
@@ -17539,7 +17540,7 @@ var SideBar = function (_Component) {
 												),
 												_react2.default.createElement(
 														'div',
-														{ className: 'social-proof' },
+														{ className: 'social-proof hide' },
 														_react2.default.createElement(
 																'h5',
 																{ className: 'medium-gray social-label' },
@@ -17553,7 +17554,7 @@ var SideBar = function (_Component) {
 												),
 												_react2.default.createElement(
 														'div',
-														{ className: 'social-proof' },
+														{ className: 'social-proof hide' },
 														_react2.default.createElement(
 																'h5',
 																{ className: 'medium-gray social-label' },
