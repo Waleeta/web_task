@@ -34,7 +34,7 @@ class SideBar extends Component {
 										<h3 className='bold dark-gray'> { newMileage } miles </h3>
 								</div>
 								<div className='sideBar bottom '>
-										<h5 className='sidebar-label medium-gray'> Item Number: { itemNum } </h5>
+										<h5 className='sidebar-label medium-gray item'> Item Number: { itemNum } </h5>
 										<h5 className='vin-info medium-gray'> VIN: {vin} </h5> 
 										<h5 className='side-bar-share dark-gray'>	Share this car <img src='https://image.flaticon.com/icons/png/128/20/20061.png' height='12px;' />	</h5>
 										<div className='social-proof'>

@@ -17510,7 +17510,7 @@ var SideBar = function (_Component) {
 												{ className: 'sideBar bottom ' },
 												_react2.default.createElement(
 														'h5',
-														{ className: 'sidebar-label medium-gray' },
+														{ className: 'sidebar-label medium-gray item' },
 														' Item Number: ',
 														itemNum,
 														' '
