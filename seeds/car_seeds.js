@@ -15,24 +15,16 @@ var cars = [
 				cityMpg: 25,
 				highwayMpg: 35,
 				engine: 1.5,
-				carImages: ['../public/images/mazda-interior_1', '../public/images/mazda-interior_2'],
+				carImages: [
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_1.jpg",
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_6.jpeg",
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_5.jpg",
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_4.jpg",
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_3.jpg",
+						"https://s3.us-east-2.amazonaws.com/webtaskimages/mazda-interior_2.jpg",
+					],
 				timestamp: Date.now
 		}),
-		
-		new Car ({
-				carName: 'Ford Focus',
-				year: 2013,
-				priceRange: '$15,000 - $20,000',
-				mileage: 195000,
-				itemNumber: '1432K',
-				vin: 'D6657H8771098J321',
-				cylinders: 'L4',
-				cityMpg: 25,
-				highwayMpg: 35,
-				engine: 1.6,
-				carImages: ['../public/images/mazda-interior_1', '../public/images/mazda-interior_2'],
-				timestamp: Date.now
-		})
 	]
 
 

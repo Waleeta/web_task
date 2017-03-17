@@ -26,7 +26,7 @@ class Car extends Component {
 				const car = this.props.car;
 				
 				return (
-						<div className='full-car'> 
+						<div className='full-car light-gray'> 
 						
 								<div>
 									<NavBar />

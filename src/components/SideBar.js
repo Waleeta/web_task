@@ -21,25 +21,36 @@ class SideBar extends Component {
 
 		return (
 				<div>		
-						<div md={4} className='sideBar'>
-								<div md={4} className='sideBar sideBar-title'>
-										<h4 style={{color:'#343434'}} className='car-name'> { carName } </h4>
+						<div className='sideBar'>
+								<div className='sideBar sideBar-title'>
+										<h1 className='car-name black'> { carName } </h1>
 								</div>
-								<div md={4} className='sideBar top'>
-										<h4 className='header-title'> Year </h4>
-										<h4 className='header-side-bar'> { year } </h4>
-										<h4 className='header-title'> Price Range </h4>
-										<h4 className='header-side-bar'> { newPrice } </h4>
-										<h4 className='header-title'> Mileage </h4>
-										<h4 className='header-side-bar'> { newMileage } miles </h4>
+								<div className='sideBar top'>
+										<h5 className='sidebar-label medium-gray'> Year </h5>
+										<h3 className='bold dark-gray'> { year } </h3>
+										<h5 className='sidebar-label medium-gray'> Price Range </h5>
+										<h3 className='bold dark-gray'> { newPrice } </h3>
+										<h5 className='sidebar-label medium-gray'> Mileage </h5>
+										<h3 className='bold dark-gray'> { newMileage } miles </h3>
 								</div>
-								<div md={4} className='sideBar bottom'>
-										<h4 className='header-title'> Item Number: { itemNum } </h4>
-										<h4 className='vin-info'> VIN {vin} </h4> 
-										<h4 className='side-bar-share'>	Share this car <img src='https://image.flaticon.com/icons/png/128/20/20061.png' height='12px;' />	</h4>
+								<div className='sideBar bottom clearfix'>
+										<h5 className='sidebar-label medium-gray'> Item Number: { itemNum } </h5>
+										<h5 className='vin-info medium-gray'> VIN: {vin} </h5> 
+										<h5 className='side-bar-share dark-gray'>	Share this car <img src='https://image.flaticon.com/icons/png/128/20/20061.png' height='12px;' />	</h5>
+										<div className='social-proof'>
+											<h5 className='medium-gray social-label'>Views</h5>
+											<h3 className='light-green bold'>37</h3>
+										</div>
+										<div className='social-proof'>
+											<h5 className='medium-gray social-label'>Saves</h5>
+											<h3 className='light-green bold'>20</h3>
+										</div>
+										<div className='social-proof'>
+											<h5 className='medium-gray social-label'>Shares</h5>
+											<h3 className='light-green bold'>15</h3>
+										</div>
 								</div>
 						</div>
-
 				</div>
 			)
 	}

@@ -16970,7 +16970,7 @@ var Car = function (_Component) {
 
 						return _react2.default.createElement(
 								'div',
-								{ className: 'full-car' },
+								{ className: 'full-car light-gray' },
 								_react2.default.createElement(
 										'div',
 										null,
@@ -17076,7 +17076,7 @@ var CarImages = function (_Component) {
 					};
 
 					return _react2.default.createElement('img', { onClick: clickImage,
-						style: { width: 168, height: 168 },
+
 						className: 'image-gallery',
 						src: imageUrl });
 				})
@@ -17136,7 +17136,7 @@ var CarInfoBox = function (_Component) {
 
 						return _react2.default.createElement(
 								'table',
-								{ className: 'car-info-table' },
+								null,
 								_react2.default.createElement(
 										'th',
 										null,
@@ -17144,8 +17144,8 @@ var CarInfoBox = function (_Component) {
 												'td',
 												{ colSpan: '2' },
 												_react2.default.createElement(
-														'h4',
-														{ className: 'car-info-heading' },
+														'h3',
+														{ className: 'car-info-heading bold medium-gray' },
 														this.props.header
 												)
 										)
@@ -17164,7 +17164,7 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												{ className: 'car-info-details bold' },
 												this.props.car.cylinders
 										)
 								),
@@ -17183,7 +17183,8 @@ var CarInfoBox = function (_Component) {
 										_react2.default.createElement(
 												'td',
 												{ className: 'car-info-details bold' },
-												this.props.car.cityMpg
+												this.props.car.cityMpg,
+												' MPG'
 										)
 								),
 								_react2.default.createElement(
@@ -17200,8 +17201,9 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
-												this.props.car.highwayMpg
+												{ className: 'car-info-details bold' },
+												this.props.car.highwayMpg,
+												' MPG'
 										)
 								),
 								_react2.default.createElement(
@@ -17218,7 +17220,7 @@ var CarInfoBox = function (_Component) {
 										),
 										_react2.default.createElement(
 												'td',
-												{ className: 'car-info-details' },
+												{ className: 'car-info-details bold' },
 												this.props.car.engine
 										)
 								)
@@ -17445,13 +17447,13 @@ var SideBar = function (_Component) {
 								null,
 								_react2.default.createElement(
 										'div',
-										{ md: 4, className: 'sideBar' },
+										{ className: 'sideBar' },
 										_react2.default.createElement(
 												'div',
-												{ md: 4, className: 'sideBar sideBar-title' },
+												{ className: 'sideBar sideBar-title' },
 												_react2.default.createElement(
-														'h4',
-														{ style: { color: '#343434' }, className: 'car-name' },
+														'h1',
+														{ className: 'car-name black' },
 														' ',
 														carName,
 														' '
@@ -17459,39 +17461,39 @@ var SideBar = function (_Component) {
 										),
 										_react2.default.createElement(
 												'div',
-												{ md: 4, className: 'sideBar top' },
+												{ className: 'sideBar top' },
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-title' },
+														'h5',
+														{ className: 'sidebar-label medium-gray' },
 														' Year '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-side-bar' },
+														'h3',
+														{ className: 'bold dark-gray' },
 														' ',
 														year,
 														' '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-title' },
+														'h5',
+														{ className: 'sidebar-label medium-gray' },
 														' Price Range '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-side-bar' },
+														'h3',
+														{ className: 'bold dark-gray' },
 														' ',
 														newPrice,
 														' '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-title' },
+														'h5',
+														{ className: 'sidebar-label medium-gray' },
 														' Mileage '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-side-bar' },
+														'h3',
+														{ className: 'bold dark-gray' },
 														' ',
 														newMileage,
 														' miles '
@@ -17499,27 +17501,69 @@ var SideBar = function (_Component) {
 										),
 										_react2.default.createElement(
 												'div',
-												{ md: 4, className: 'sideBar bottom' },
+												{ className: 'sideBar bottom clearfix' },
 												_react2.default.createElement(
-														'h4',
-														{ className: 'header-title' },
+														'h5',
+														{ className: 'sidebar-label medium-gray' },
 														' Item Number: ',
 														itemNum,
 														' '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'vin-info' },
-														' VIN ',
+														'h5',
+														{ className: 'vin-info medium-gray' },
+														' VIN: ',
 														vin,
 														' '
 												),
 												_react2.default.createElement(
-														'h4',
-														{ className: 'side-bar-share' },
+														'h5',
+														{ className: 'side-bar-share dark-gray' },
 														' Share this car ',
 														_react2.default.createElement('img', { src: 'https://image.flaticon.com/icons/png/128/20/20061.png', height: '12px;' }),
 														' '
+												),
+												_react2.default.createElement(
+														'div',
+														{ className: 'social-proof' },
+														_react2.default.createElement(
+																'h5',
+																{ className: 'medium-gray social-label' },
+																'Views'
+														),
+														_react2.default.createElement(
+																'h3',
+																{ className: 'light-green bold' },
+																'37'
+														)
+												),
+												_react2.default.createElement(
+														'div',
+														{ className: 'social-proof' },
+														_react2.default.createElement(
+																'h5',
+																{ className: 'medium-gray social-label' },
+																'Saves'
+														),
+														_react2.default.createElement(
+																'h3',
+																{ className: 'light-green bold' },
+																'20'
+														)
+												),
+												_react2.default.createElement(
+														'div',
+														{ className: 'social-proof' },
+														_react2.default.createElement(
+																'h5',
+																{ className: 'medium-gray social-label' },
+																'Shares'
+														),
+														_react2.default.createElement(
+																'h3',
+																{ className: 'light-green bold' },
+																'15'
+														)
 												)
 										)
 								)

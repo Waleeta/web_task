@@ -7,22 +7,18 @@
   <body>
 		<h1>Create Car</h1>
 		<form action='/api/car' method='post'>
-			<input type='text' name='carName' placeholder='carName' />
-			<input type='number' name='year' placeholder='year' />
-			<input type='text' name='priceRange' placeholder='Price Range' />
-			<input type='number' name='mileage' placeholder='mileage' />
-			<input type='text' name='itemNumber' placeholder='item number' />
-			<input type='text' name='vin' placeholder='vin' />
-			<input type='text' name='cylinders' placeholder='cylinders' />
-			<input type='number' name='cityMpg' placeholder='City MPG' />
-			<input type='number' name='highwayMpg' placeholder='Highway MPG' />
-			<input type='text' name='engine' placeholder='engine' />
-			<input type='text' name='carImages' placeholder='images' />
+			<input type='text' name='carName' placeholder='carName' /><br>
+			<input type='number' name='year' placeholder='year' /><br>
+			<input type='text' name='priceRange' placeholder='Price Range' /><br>
+			<input type='number' name='mileage' placeholder='mileage' /><br>
+			<input type='text' name='itemNumber' placeholder='item number' /><br>
+			<input type='text' name='vin' placeholder='vin' /><br>
+			<input type='text' name='cylinders' placeholder='cylinders' /><br>
+			<input type='number' name='cityMpg' placeholder='City MPG' /><br>
+			<input type='number' name='highwayMpg' placeholder='Highway MPG' /><br>
+			<input type='text' name='engine' placeholder='engine' /><br>
 			<input type='submit' value='Submit car' />
 		</form>
-
-		<br>
-		<br>
 
   </body>
 </html>
