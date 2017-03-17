@@ -422,6 +422,9 @@ td.car-info-details:nth-child(even) {
 			display: block;
 			border-top: 16px solid #efeff2;
 			clear: both;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 60px;
 		}
 
     .car-info-div {
