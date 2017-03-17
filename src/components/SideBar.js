@@ -24,7 +24,7 @@ class SideBar extends Component {
 						<div className='sideBar'>
 								<div className='sideBar sideBar-title'>
 										<h1 className='car-name black'> { carName } </h1>
-								</div>
+								</div>						
 								<div className='sideBar top'>
 										<h5 className='sidebar-label medium-gray'> Year </h5>
 										<h3 className='bold dark-gray'> { year } </h3>

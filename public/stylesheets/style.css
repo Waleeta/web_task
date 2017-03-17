@@ -227,6 +227,15 @@ h6 { font-size: 10px;										}
 	width: 173px;
 }
 
+.call {
+	display: none;
+	width: 320px;
+	height: 60px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background-color: #106838;
+}
+
 
 /* -------- AUTO SPEC CARDS -------- */
 
@@ -297,27 +306,24 @@ td.car-info-details:nth-child(even) {
     }
 
     .nav-bar-black {
-    	width: 280px;
-    	float: none;
+    	width: 218px;
+    	float: left;
     }
 
     .nav-bar-orange {
-    	display: none;
+    	width: 50px;
     }
 
     .nav-bar-orange:nth-child(3) {
-    	width: 20px;
-    	
-    }
-
-    .orange-corner {
     	display: none;
     }
+
 
     .main-car-image {
     	width: 320px;
     	height: 256px;
     	float: none;
+    	clear: both;
     }
 
     .car-images {
@@ -365,7 +371,11 @@ td.car-info-details:nth-child(even) {
     	float: left;
     }
 
-
+    .call {
+			display: block;
+			border-top: 16px solid #efeff2;
+			clear: both;
+		}
 
     .car-info-div {
     	margin: 0px;
