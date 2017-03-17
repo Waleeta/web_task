@@ -17142,7 +17142,7 @@ var CarInfoBox = function (_Component) {
 										null,
 										_react2.default.createElement(
 												'td',
-												{ colSpan: '2' },
+												null,
 												_react2.default.createElement(
 														'h3',
 														{ className: 'car-info-heading bold medium-gray' },

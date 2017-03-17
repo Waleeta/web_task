@@ -9,7 +9,7 @@ class CarInfoBox extends Component {
 		return (
 				<table> 
 						<th>
-								<td colSpan='2'>
+								<td>
 										<h3 className='car-info-heading bold medium-gray'>{this.props.header}</h3>
 								</td>
 						</th>

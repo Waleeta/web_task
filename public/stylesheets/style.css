@@ -226,16 +226,12 @@ h6 { font-size: 10px;										}
 
 table {
 	margin: 40px 40px 0px 40px;
+	width: 400px;
 }
-
 
 td {
-	border: 1px solid red;
-}
-
-td.car-info-details {
-	padding-bottom: 12px;
 	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 tr {
@@ -246,14 +242,18 @@ tr:last-child {
 	border: none;
 }
 
+td:first-child {
+	width: 280px;
+}
+
 td.car-info-details:nth-child(even) {
-	width: 160px;
-	padding-right: 130px;
 	text-align: left;
 }
 
 .car-info-heading {
-	margin-bottom: 8px;
+	text-align: left;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 
 
